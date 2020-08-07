@@ -1,0 +1,511 @@
+body {
+  overflow-x: hidden;
+}
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1em !important;
+}
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+.carousel-image-1 {
+  background: url("../img/showcase11.png") no-repeat center center/cover;
+  /* background-size: cover; */
+  /* position: relative; */
+}
+.carousel-image-2 {
+  background: url("../img/showcase2copy.jpeg");
+  background-size: cover;
+}
+.carousel-image-3 {
+  background: url("../img/ecoretreat/showcase3.jpg");
+  background-size: cover;
+}
+#home-heading {
+  position: relative;
+  min-height: 150px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#page-header {
+  background: url("../img/showcase11.png") no-repeat 20% 13% / cover;
+  height: 20rem;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+#page-header-food {
+  background: url("../img/foodshowcase.jpg") no-repeat 20% 13% / cover;
+  height: 20rem;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+.about-img {
+  margin-top: -100px;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+/* New Styles */
+
+#info,
+#info3,
+#info5 {
+  background-color: #d3d3d3;
+}
+/* #nanditaPhoto {
+  margin-left: 50px;
+} */
+.image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+.image img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#nanditaId img,
+#aishId img,
+#klassyId img,
+#sohanId img,
+#girishId img {
+  margin-top: -50px;
+}
+
+#profileName {
+  font-style: italic;
+  font-size: xx-large;
+}
+.pofileImage img {
+  margin-top: -60px;
+}
+
+.birthdate {
+  text-align: center;
+  font-style: oblique;
+}
+
+/* @media(max-width : 350px){
+  
+} */
+
+.cover-image-nandita {
+  height: 300px;
+  background: url("../img/nandita/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 800px;
+}
+.cover-image-sohan {
+  height: 300px;
+  background: url("../img/sohan/cover2.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 800px;
+}
+.cover-image-aish {
+  height: 300px;
+  background: url("../img/aish/showcase.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 800px;
+  /* background-attachment: fixed; */
+  /* color: #fff; */
+  /* border-bottom: 1px #eee solid; */
+  /* padding-top: 50px; */
+}
+.cover-image-klassy {
+  height: 300px;
+  background: url("../img/klassy/showcase.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 800px;
+}
+.cover-image-girish {
+  height: 300px;
+  background: url("../img/girish/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 800px;
+}
+
+/* About page */
+/* Image Gallery Styles */
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  position: relative;
+  background: #fff0f5;
+  overflow: hidden;
+}
+.item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item:hover:after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+/* scale image on hover */
+.item:hover .item-image {
+  transform: scale(1.2);
+}
+/* // bring in text on hover */
+.item:hover .item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item-image {
+  height: auto;
+  transform: translateZ(0);
+  display: block;
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+.item-image:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+.item-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: red;
+  transform: translateY(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms;
+}
+
+.item-text-wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.item-text-title {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin: 5px 0 0 0;
+}
+.item-text-category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  margin: 0;
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+a[class^="btn-secondary"]:hover {
+  background-color: #980000;
+  text-decoration: none;
+}
+
+/* Contact Section */
+.text-fields {
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "subject phone"
+    "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+button[type="submit"] {
+  width: 50%;
+}
+.name-input {
+  grid-area: name;
+}
+.subject-input {
+  grid-area: subject;
+}
+.email-input {
+  grid-area: email;
+}
+.phone-input {
+  grid-area: phone;
+}
+.message-input {
+  grid-area: message;
+  height: 100px;
+}
+.text-input {
+  padding: 0.5rem 1rem;
+}
+
+/* Food page */
+.foodPicture {
+  max-width: 100%;
+  height: 40rem;
+}
+/* places Page */
+.cover-image-ramchandi {
+  height: 500px;
+  background: url("../img/Ramchandi//cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+.cover-image-kharagpur {
+  height: 500px;
+  background: url("../img/Kharagpur/cover2.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+.cover-image-ranpur {
+  height: 500px;
+  background: url("../img/Ranpur/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+.cover-image-ecoretreat {
+  height: 500px;
+  background: url("../img/ecoretreat/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+.cover-image-balighai {
+  height: 500px;
+  background: url("../img/Balighai/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+.cover-image-devidwar {
+  height: 500px;
+  background: url("../img/devidwar/cover.jpg");
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 1200px;
+}
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .cover-image-ramchandi,
+  .cover-image-kharagpur,
+  .cover-image-ranpur,
+  .cover-image-ecoretreat,
+  .cover-image-devidwar,
+  .cover-image-balighai {
+    height: 300px;
+    /* max-height: 300px; */
+    max-width: 800px;
+  }
+  .carousel-item {
+    height: 500px;
+    width: 100%;
+  }
+  .carousel-image-1 {
+    height: 300px;
+    background: url("../img/showcase1.jpg");
+    /* height: 35rem; */
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  .carousel-image-2 {
+    height: 300px;
+    background: url("../img/showcase2copy.jpeg");
+
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  .carousel-image-3 {
+    height: 300px;
+    background: url("../img/ecoretreat/showcase3.jpg");
+
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  #page-header {
+    background: url("../img/showcase1.jpg") no-repeat center 13% / cover;
+    height: 20rem;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+  }
+  .items {
+    grid-template-columns: 1fr;
+  }
+  .text-fields {
+    grid-template-areas:
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message";
+  }
+  .foodPicture {
+    height: 30rem;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side,
+  .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+
+.foodwidth {
+  max-width: 800px;
+  margin: 0 auto;
+}
